@@ -1,0 +1,19 @@
+{
+  "name": "touzain_yoann_3_22072021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoanntouzain/Touzain_Yoann_3_22072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoanntouzain/Touzain_Yoann_3_22072021/issues"
+  },
+  "homepage": "https://github.com/yoanntouzain/Touzain_Yoann_3_22072021#readme"
+}
