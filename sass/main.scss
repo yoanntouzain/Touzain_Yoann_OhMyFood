@@ -4,6 +4,14 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/form";
+
 @import "./pages/a_la_française";
 @import "./pages/la_note_enchantée";
 @import "./pages/le_délice_des_sens";
+@import "./pages/la_palette_du_gout";
+@import "./pages/index";
