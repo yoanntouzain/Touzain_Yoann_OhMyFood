@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:Styles/styles.css"
+    "sass": "sass --watch ./sass/main.scss:Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/styles.css"
   },
   "repository": {
     "type": "git",
