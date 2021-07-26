@@ -1,5 +1,30 @@
 body {
     background: greenyellow;
+    text-align: center;
+}
+.reserve-menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 34px;
+    padding-bottom: 44px;
+    &  h1 {
+    font-size: 1.1rem;
+    margin: 2% 12% 1% 12%;
+    }
+    & p {
+        margin: 0% 3% 8% 3%;
+        font-size: 1rem;
+    }
+}
+.critères {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    &-titre {
+        font-size: 1.2rem;
+        text-align: left;
+    }
 }
 .container-vignettes {
     display: flex;

@@ -1,0 +1,13 @@
+.btn-explorer {
+    background: $color-primary;
+    padding: 14px 8px 14px 8px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    & strong {
+        font-size: 0.8rem;
+        color: #fff;
+    }
+
+}
