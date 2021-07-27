@@ -124,6 +124,16 @@ a {
   color: #fff;
 }
 
+.critères-btn {
+  background: #f2f2f2bd;
+  position: relative;
+  border: 1px solid #f2f2f2bd;
+  border-radius: 10px;
+  padding: 20px auto 20px auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .container-blanc {
   display: flex;
   justify-content: center;
@@ -142,7 +152,7 @@ a {
 .nav {
   display: flex;
   justify-content: center;
-  background: #f2f2f2a4;
+  background: #f2f2f259;
 }
 
 .search-ville {
@@ -157,7 +167,7 @@ a {
   padding-left: 0px;
   width: 68%;
   border: none;
-  background: #f2f2f2a4;
+  background: #f2f2f259;
 }
 
 body {
@@ -170,6 +180,7 @@ body {
   flex-direction: column;
   padding-top: 34px;
   padding-bottom: 44px;
+  background: #f2f2f2bd;
 }
 .reserve-menu h1 {
   font-size: 1.1rem;
@@ -183,14 +194,31 @@ body {
 .critères {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 8%;
 }
 .critères-titre {
   font-size: 1.2rem;
   text-align: left;
 }
+.critères-btn-chiffre {
+  position: absolute;
+  border: 0px solid;
+  border-radius: 100%;
+  background: #9356dc;
+  color: #fff;
+  padding: 4px 6px;
+  font-size: 0.7rem;
+  left: -6px;
+}
 
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Section*/
 .container-vignettes {
   display: flex;
   flex-wrap: wrap;

@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     padding-top: 34px;
     padding-bottom: 44px;
+    background: $color-grey-light;
     &  h1 {
     font-size: 1.1rem;
     margin: 2% 12% 1% 12%;
@@ -19,13 +20,29 @@ body {
 .critères {
     display: flex;
     flex-direction: column;
-    margin-left: 8%;
+    margin-left: 7%;
     margin-right: 8%;
     &-titre {
         font-size: 1.2rem;
         text-align: left;
     }
+    &-btn-chiffre {
+        position: absolute;
+        border: 0px solid;
+        border-radius: 100%;
+        background: $color-primary;
+        color: $color-white;
+        padding: 4px 6px;
+        font-size: 0.7rem;
+        left: -6px;
+    }
 }
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    /*Section*/
 .container-vignettes {
     display: flex;
     flex-wrap: wrap;
