@@ -26,21 +26,37 @@ body {
         font-size: 1.2rem;
         text-align: left;
     }
-    &-btn-chiffre {
-        position: absolute;
-        border: 0px solid;
-        border-radius: 100%;
-        background: $color-primary;
-        color: $color-white;
-        padding: 4px 6px;
-        font-size: 0.7rem;
-        left: -6px;
+    &-btn {
+        margin-top: 20px;
+        position: relative;
+        padding: 20px;
+        border: none;
+        border-radius: 15px;
+        &-chiffre {
+            position: absolute;
+            left: -10px;
+            top: 18px;
+            border: 0px solid $color-primary;
+            border-radius: 100%;
+            padding: 4px 6px;
+            font-size: 0.7rem;
+            color: $color-white;
+            background: $color-primary;
+        }
+        &-description {
+            display: flex;
+            & i {
+                margin-left: 10px;
+                &__focus {
+                    color: $color-primary;
+                }
+            }
+            & strong {
+                font-family: 'Roboto-Light';
+                margin-left: 15px;
+            }
+        }
     }
-}
-.test {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
     /*Section*/
 .container-vignettes {
