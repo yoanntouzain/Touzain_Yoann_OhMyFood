@@ -32,6 +32,13 @@ body {
         border: none;
         border-radius: 15px;
         @include box-shadow;
+        background: $color-grey-light;
+        &:hover {
+            background: lighten($color: $color-primary, $amount: 35);
+            & i {
+                color: darken($color: $color-primary, $amount: 5);
+            }
+        }
         &-chiffre {
             position: absolute;
             left: -10px;
@@ -48,9 +55,6 @@ body {
             & i {
                 margin-left: 10px;
                 color: $color-icons-grey;
-                &:focus {
-                    color: $color-primary;
-                }
             }
             & strong {
                 font-family: 'Roboto-Bold';
