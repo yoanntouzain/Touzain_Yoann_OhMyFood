@@ -1,7 +1,7 @@
     /*font*/
 @font-face {
     font-family: 'Shrikhand';
-    src: url('../../Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Shrikhand/Shrikhand-Regular.otf');
+    src: url('/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Shrikhand/Shrikhand-Regular.otf');
     font-weight:normal;
 }
 @font-face {
@@ -16,7 +16,7 @@
 }
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url('/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Bold.ttf');
+    src: url('/Touzain_Yoann_3_22072021/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Bold.ttf');
     font-weight:normal;
 }
 @font-face {
@@ -96,9 +96,6 @@
 }
 header, h1, h2, h3 {
     font-family: 'Shrikhand';
-}
-body {
-    font-family: 'Roboto-Light';
 }
 a {
     color: black;
