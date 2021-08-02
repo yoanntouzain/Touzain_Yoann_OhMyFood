@@ -65,27 +65,82 @@ body {
     }
 }
     /*Section*/
+section {
+    display: flex;
+    flex-direction: column;
+    background: $color-grey-light;
+    margin-top: 50px;
+    & h1 {
+        margin-top: 40px;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
 .container-vignettes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 7%;
+    margin-right: 7%;
     &-lien {
+        position: relative;
         background: $color-white;
         border: 0px solid $color-white;
         border-radius: 25px 25px 25px 25px;
-        text-decoration: none;
-        outline: none;
+        @include decoration-none;
+        width: 100%;
+        background: greenyellow;
+        margin-bottom: 18px;
+        @include box-shadow
     }
 }
 .container-vignettes-lien  .vignettes {
     &-img {
-        height: 118px;
+        width: 100%;
+        height: 160px;
         & img {
         width: 100%;
         height: 100%;
         border: 0px solid $color-white;
-        border-radius: 25px 25px 0px 0px;
+        border-radius: 15px 15px 0px 0px;
         object-fit: cover;
         }
+        &-nouveau {
+            position: absolute;
+            top: 10px;
+            right: 11px;
+            border: 0px solid $color-tertiary;
+            border-radius: 3px;
+            padding: 5px 10px;
+            background: $color-tertiary;
+            color: darken($color: $color-tertiary, $amount: 40);
+            font-family: "Roboto-light";
+        }
     }
+    &-description {
+        position: relative;
+        text-align: left;
+        margin-left: 10px;
+        margin-bottom: 14px;
+        &-titre {
+            font-size: 1rem;
+            margin-bottom: 0px;
+        }
+        &-paragraphe {
+            font-size: 0.95rem;
+            margin-top: 2px;
+            margin-bottom: 0px;
+        }
+        &-icone {
+            position: absolute;
+            cursor: pointer;
+            top: 6px;
+            right: 25px;
+            font-size: 1.3rem;
+        }
+    }
+}
+    /*Footer*/
+.footer {
+    @include footer;
 }
