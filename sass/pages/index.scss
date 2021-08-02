@@ -52,13 +52,20 @@ body {
         }
         &-description {
             display: flex;
+            &-mobile {
+                font-size: 1rem;
+                margin-right: 5px;
+            }
+            &-menu {
+                font-size: 0.9rem;
+            }
             & i {
                 margin-left: 10px;
                 color: $color-icons-grey;
+                margin-right: 15px;
             }
             & strong {
                 font-family: 'Roboto-Bold';
-                margin-left: 15px;
                 font-weight: bold;
             }
         }
