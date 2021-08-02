@@ -6,97 +6,97 @@ body {
 /*font*/
 @font-face {
   font-family: "Shrikhand";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Shrikhand/Shrikhand-Regular.otf");
+  src: url("Fonts/Shrikhand/Shrikhand-Regular.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-Black";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Black.ttf");
+  src: url("Fonts/Roboto/Roboto-Black.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-BlackItalic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-BlackItalic.ttf");
+  src: url("Fonts/Roboto/Roboto-BlackItalic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("/Touzain_Yoann_3_22072021/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Bold.ttf");
+  src: url("Fonts/Roboto/Roboto-Bold.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-BoldItalic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-BoldItalic.ttf");
+  src: url("Fonts/Roboto/Roboto-BoldItalic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-Italic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Italic.ttf");
+  src: url("Fonts/Roboto/Roboto-Italic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-Light";
-  src: url("/Touzain_Yoann_3_22072021/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Light.ttf");
+  src: url("Fonts/Roboto/Roboto-Light.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-LightItalic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-LightItalic.ttf");
+  src: url("Fonts/Roboto/Roboto-LightItalic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Medium.ttf");
+  src: url("Fonts/Roboto/Roboto-Medium.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-MediumItalic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-MediumItalic.ttf");
+  src: url("Fonts/Roboto/Roboto-MediumItalic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Regular.ttf");
+  src: url("Fonts/Roboto/Roboto-Regular.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-Thin";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-Thin.ttf");
+  src: url("Fonts/Roboto/Roboto-Thin.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto-ThinItalic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/Roboto-ThinItalic.ttf");
+  src: url("Fonts/Roboto/Roboto-ThinItalic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "RobotoCondensed-Bold";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/RobotoCondensed-Bold.ttf");
+  src: url("Fonts/Roboto/RobotoCondensed-Bold.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "RobotoCondensed-BoldItalic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/RobotoCondensed-BoldItalic.ttf");
+  src: url("Fonts/Roboto/RobotoCondensed-BoldItalic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "RobotoCondensed-Italic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/RobotoCondensed-Italic.ttf");
+  src: url("Fonts/Roboto/RobotoCondensed-Italic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "RobotoCondensed-Light";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/RobotoCondensed-Light.ttf");
+  src: url("Fonts/Roboto/RobotoCondensed-Light.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "RobotoCondensed-LightItalic";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/RobotoCondensed-LightItalic.ttf");
+  src: url("Fonts/Roboto/RobotoCondensed-LightItalic.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "RobotoCondensed-Regular";
-  src: url("/Documents/Dev/Ohmyfood/Touzain_Yoann_3_22072021/Styles/Fonts/Roboto/RobotoCondensed-Regular.ttf");
+  src: url("Fonts/Roboto/RobotoCondensed-Regular.ttf");
   font-weight: normal;
 }
 header, h1, h2, h3 {
@@ -223,13 +223,20 @@ body {
 .critères-btn-description {
   display: flex;
 }
+.critères-btn-description-mobile {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.critères-btn-description-menu {
+  font-size: 0.9rem;
+}
 .critères-btn-description i {
   margin-left: 10px;
   color: grey;
+  margin-right: 15px;
 }
 .critères-btn-description strong {
   font-family: "Roboto-Bold";
-  margin-left: 15px;
   font-weight: bold;
 }
 
