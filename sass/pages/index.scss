@@ -80,15 +80,14 @@ section {
 .container-vignettes {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
     &-lien {
         position: relative;
         background: $color-white;
         border: 0px solid $color-white;
         border-radius: 25px 25px 25px 25px;
-        text-decoration: none;
-        outline: none;
+        @include decoration-none;
         width: 100%;
         background: greenyellow;
         margin-bottom: 18px;
@@ -140,4 +139,8 @@ section {
             font-size: 1.3rem;
         }
     }
+}
+    /*Footer*/
+.footer {
+    @include footer;
 }

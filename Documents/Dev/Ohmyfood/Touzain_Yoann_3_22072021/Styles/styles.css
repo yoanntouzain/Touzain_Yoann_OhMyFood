@@ -250,8 +250,8 @@ section h1 {
 .container-vignettes {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 .container-vignettes-lien {
   position: relative;
@@ -309,6 +309,40 @@ section h1 {
   top: 6px;
   right: 25px;
   font-size: 1.3rem;
+}
+
+/*Footer*/
+.footer {
+  background: #353535;
+  color: #fff;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Roboto-Light";
+}
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7%;
+}
+.footer-div-titre {
+  font-size: 1rem;
+  margin: 0px;
+}
+.footer-div-list {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-div-list-li {
+  margin-top: 10px;
+}
+.footer-div-list-li-utensils i {
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+.footer-div-list-li-main i {
+  font-size: 0.6rem;
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
