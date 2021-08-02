@@ -223,13 +223,20 @@ body {
 .critères-btn-description {
   display: flex;
 }
+.critères-btn-description-mobile {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.critères-btn-description-menu {
+  font-size: 0.9rem;
+}
 .critères-btn-description i {
   margin-left: 10px;
   color: grey;
+  margin-right: 15px;
 }
 .critères-btn-description strong {
   font-family: "Roboto-Bold";
-  margin-left: 15px;
   font-weight: bold;
 }
 
