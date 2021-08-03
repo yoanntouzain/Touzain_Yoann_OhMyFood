@@ -1,0 +1,36 @@
+.footer {
+    background: $color-footer;
+    color: $color-white;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto-Light';
+    &-div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+        &-titre {
+            font-size: 1rem;
+            margin: 0px
+        }
+        &-list {
+            @include list-none;
+            padding-left: 0px;
+            &-li {
+                margin-top: 10px;
+                & a {
+                    @include decoration-none;
+                    color: $color-white;
+                }
+                &-utensils i {
+                    font-size: 0.9rem;
+                    margin-right: 8px;
+                }
+                &-main i {
+                    font-size: 0.6rem;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

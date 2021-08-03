@@ -1,0 +1,12 @@
+/*Bannière*/
+.banniere {
+    @include banniere;
+}
+.section-menu {
+    position: relative;
+    top: -50px;
+    background: $color-grey-light;
+    border: 0px solid $color-grey-light;
+    border-radius: 30px 30px 0px 0px;
+    padding-top: 10px;
+}
