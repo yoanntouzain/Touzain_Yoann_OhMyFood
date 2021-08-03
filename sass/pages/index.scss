@@ -72,12 +72,12 @@ body {
     }
 }
     /*Section*/
-section {
+.section-index {
     display: flex;
     flex-direction: column;
     background: $color-grey-light;
     margin-top: 50px;
-    & h1 {
+    &-titre {
         margin-top: 40px;
         text-align: left;
         margin-left: 5%;
@@ -146,8 +146,4 @@ section {
             font-size: 1.3rem;
         }
     }
-}
-    /*Footer*/
-.footer {
-    @include footer;
 }
