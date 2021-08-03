@@ -10,27 +10,29 @@
     <body>
         <header class="header">
             <div class="container-blanc">
-                <a href="index.html">
-                    <i class="fas fa-arrow-left"></i>
-                </a>
+                <div class="container-blanc-icone">
+                    <a href="index.html" class="fleche">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
                 <div class="container-blanc-logo">
                     <img src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo"/>
                 </div>
             </div>
         </header>
-        <div class="bannière">
+        <div class="banniere">
             <img src="Maquettes_Ohmyfood/images/restaurants/La_note_enchantée.jpg" alt="La note enchantée"/>
         </div>
-        <section>
-            <div class="titre-section">
-                <h1>
+        <section class="section-menu">
+            <div class="section-menu-container">
+                <h1 class="section-menu-container-h1">
                     La note enchantée
+                    <span class="section-menu-container-icone">
+                        <i class="far fa-heart"></i>
+                    </span>
                 </h1>
-                <span>
-                    <i class="far fa-heart"></i>
-                </span>
             </div>
-            <div class="menu-carte">
+            <div class="section-menu-carte">
                 <h2>
                     Entrées
                 </h2>
@@ -263,26 +265,34 @@
                 Commander
             </button>
         </section>
-        <footer>
-            <h1>
-                Ohmyfood
-            </h1>
-            <ul>
-                <li>
-                    <i class="fas fa-utensils"></i> Proposer un restaurant
-                </li>
-                <li>
-                    <i class="fas fa-hands-helping"></i> Devenir partenaire
-                </li>
-                <li>
-                    Mentions légales
-                </li>
-                <a href="#">
-                    <li>
-                        Contact
+        <footer class="footer">
+            <div class="footer-div">
+                <h1 class="footer-div-titre">
+                    Ohmyfood
+                </h1>
+                <ul class="footer-div-list">
+                    <li class="footer-div-list-li">
+                        <span class="footer-div-list-li-utensils">
+                            <i class="fas fa-utensils"></i>
+                        </span>
+                        Proposer un restaurant
                     </li>
-                </a>
-            </ul>
+                    <li class="footer-div-list-li">
+                        <span class="footer-div-list-li-main">
+                            <i class="fas fa-hands-helping"></i>
+                        </span>
+                        Devenir partenaire
+                    </li>
+                    <li class="footer-div-list-li">
+                        Mentions légales
+                    </li>
+                    <li class="footer-div-list-li">
+                        <a href="mailto:contact@ohmyfood.fr">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
