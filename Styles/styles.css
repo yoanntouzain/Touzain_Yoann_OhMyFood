@@ -229,21 +229,65 @@ a {
   background: #F6F6F6;
   border: 0px solid #F6F6F6;
   border-radius: 30px 30px 0px 0px;
-  padding-top: 30px;
+  padding: 10px 10px 60px 10px;
 }
-.section-menu-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.section-menu-container-h1 {
-  margin: 0px;
-  font-size: 1.3rem;
-  width: 70%;
+.section-menu h1 {
+  text-align: left;
 }
 .section-menu-container-icone {
-  font-size: 1.2rem;
-  margin-right: 4%;
+  margin-left: 30px;
+}
+
+.section-menu-carte {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section-menu-carte-titre {
+  font-size: 1rem;
+  border-bottom: 3px solid #99e2d0;
+  width: 3.5rem;
+  margin-bottom: 0px;
+}
+.section-menu-carte-lien {
+  margin-top: 14px;
+  background: greenyellow;
+  border: 0px solid #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  outline: none;
+}
+
+.plat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 20px 10px 10px;
+}
+.plat-nom {
+  width: 90%;
+}
+.plat-nom-titre {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.9rem;
+}
+.plat-description-nom {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  font-size: 0.8rem;
+}
+.plat-prix-chiffre {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.check {
+  display: none;
 }
 
 body {
@@ -346,7 +390,7 @@ body {
   position: relative;
   background: #fff;
   border: 0px solid #fff;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   text-decoration: none;
   outline: none;
   width: 100%;
