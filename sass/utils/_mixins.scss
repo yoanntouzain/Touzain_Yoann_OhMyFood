@@ -6,7 +6,7 @@
 @mixin box-shadow {
     box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
 }
-@mixin color-button {
+@mixin linear-gradient {
     background: -webkit-linear-gradient(278deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
 }
 @mixin decoration-none {
