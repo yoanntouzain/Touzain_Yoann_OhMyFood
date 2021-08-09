@@ -229,7 +229,70 @@ a {
   background: #F6F6F6;
   border: 0px solid #F6F6F6;
   border-radius: 30px 30px 0px 0px;
-  padding-top: 10px;
+  padding: 10px 10px 60px 10px;
+}
+.section-menu h1 {
+  text-align: left;
+}
+.section-menu-container-icone {
+  margin-left: 30px;
+}
+
+.section-menu-carte {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.section-menu-carte-titre {
+  font-size: 1rem;
+  border-bottom: 3px solid #99e2d0;
+  width: 3.5rem;
+  margin-bottom: 0px;
+}
+.section-menu-carte-lien {
+  margin-top: 14px;
+  background: greenyellow;
+  border: 0px solid #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  outline: none;
+}
+
+.plat {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 8px 10px;
+}
+.plat-nom-titre {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  width: 227px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plat-nom-description {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  font-size: 0.83rem;
+  width: 227px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plat-prix-chiffre {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.check {
+  display: none;
 }
 
 body {
@@ -332,7 +395,7 @@ body {
   position: relative;
   background: #fff;
   border: 0px solid #fff;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   text-decoration: none;
   outline: none;
   width: 100%;
