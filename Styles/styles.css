@@ -229,7 +229,21 @@ a {
   background: #F6F6F6;
   border: 0px solid #F6F6F6;
   border-radius: 30px 30px 0px 0px;
-  padding-top: 10px;
+  padding-top: 30px;
+}
+.section-menu-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-menu-container-h1 {
+  margin: 0px;
+  font-size: 1.3rem;
+  width: 70%;
+}
+.section-menu-container-icone {
+  font-size: 1.2rem;
+  margin-right: 4%;
 }
 
 body {
