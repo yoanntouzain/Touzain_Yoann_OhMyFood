@@ -243,6 +243,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 .section-menu-carte-titre {
   font-size: 1rem;
@@ -261,26 +262,30 @@ a {
 
 .plat {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px 20px 10px 10px;
-}
-.plat-nom {
-  width: 90%;
+  margin: 10px 20px 8px 10px;
 }
 .plat-nom-titre {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  width: 227px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.plat-description-nom {
+.plat-nom-description {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 0px;
-  font-size: 0.8rem;
+  font-size: 0.83rem;
+  width: 227px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plat-prix-chiffre {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 0px;
   font-weight: bold;
   font-size: 0.8rem;
