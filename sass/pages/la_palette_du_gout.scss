@@ -1,4 +1,7 @@
 /*Bannière*/
+.body-menu {
+    background: $color-grey-light
+}
 .banniere {
     @include banniere;
 }
@@ -8,12 +11,17 @@
     background: $color-grey-light;
     border: 0px solid $color-grey-light;
     border-radius: 30px 30px 0px 0px;
-    padding: 10px 10px 60px 10px;
-    & h1 {
-        text-align: left;
-    }
-    &-container-icone {
-        margin-left: 30px;
+    padding: 10px 10px 10px 10px;
+    &-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-size: 1.25rem;
+        &-icone {
+            align-self: center;
+            font-size: 1.5rem;
+            margin-right: 18px;
+        }
     }
 }
 .section-menu-carte {
@@ -23,29 +31,31 @@
     justify-content: space-around;
     margin-bottom: 20px;
     &-titre {
-        font-size: 1rem;
+        font-size: 1.2rem;
         border-bottom: 3px solid $color-tertiary;
         width: 3.5rem;
         margin-bottom: 0px;
     }
     &-lien {
         margin-top: 14px;
-        background: greenyellow;
+        background: $color-white;
         border: 0px solid $color-white;
         border-radius: 15px;
         @include decoration-none;
+        @include box-shadow;
+        background: greenyellow;
     }
 }
 .plat {
     display: flex;
     justify-content: space-between;
-    margin: 10px 20px 8px 10px;
+    margin: 12px 20px 10px 10px;
     &-nom {
+        width: 90%;
         &-titre {
             margin-top: 0px;
             margin-bottom: 0px;
-            font-size: 0.80rem;
-            width: 227px;
+            font-size: 1rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -54,19 +64,20 @@
             margin-top: 0px;
             margin-bottom: 0px;
             margin-right: 0px;
-            font-size: 0.83rem;
-            width: 227px;
+            font-size: 1.05rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
     }
     &-prix {
+        width: 10%;
+        text-align: end;
         &-chiffre {
-            margin-top: 20px;
+            margin-top: 21px;
             margin-bottom: 0px;
             font-weight: bold;
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
     }
 }
