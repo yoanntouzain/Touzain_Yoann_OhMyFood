@@ -14,3 +14,13 @@
         background: $color-primary;
     }
 }
+.validé-commande {
+    margin-top: 30px;
+    @include linear-gradient;
+    @include box-shadow;
+    border: 0px solid $color-white;
+    border-radius: 25px;
+    padding: 15px 45px;
+    color: $color-white;
+    font-size: 0.9rem;
+}

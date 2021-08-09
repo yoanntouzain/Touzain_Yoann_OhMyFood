@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  margin: 20px 0px auto 0px;
+  margin: auto 0px;
 }
 
 /*font*/
@@ -124,9 +124,21 @@ a {
   background: #9256dc;
 }
 
+.validé-commande {
+  margin-top: 30px;
+  background: -webkit-linear-gradient(278deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
+  box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
+  border: 0px solid #fff;
+  border-radius: 25px;
+  padding: 15px 45px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
 .container-blanc {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
   padding-bottom: 14px;
   box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.39);
   background: #fff;
@@ -213,6 +225,10 @@ a {
 }
 
 /*Bannière*/
+.body-menu {
+  background: #F6F6F6;
+}
+
 .banniere {
   width: 100%;
   height: 250px;
@@ -229,13 +245,18 @@ a {
   background: #F6F6F6;
   border: 0px solid #F6F6F6;
   border-radius: 30px 30px 0px 0px;
-  padding: 10px 10px 60px 10px;
+  padding: 10px 10px 30px 10px;
 }
-.section-menu h1 {
-  text-align: left;
+.section-menu-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 1.25rem;
 }
 .section-menu-container-icone {
-  margin-left: 30px;
+  align-self: center;
+  font-size: 1.5rem;
+  margin-right: 18px;
 }
 
 .section-menu-carte {
@@ -246,30 +267,34 @@ a {
   margin-bottom: 20px;
 }
 .section-menu-carte-titre {
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-bottom: 3px solid #99e2d0;
   width: 3.5rem;
   margin-bottom: 0px;
 }
 .section-menu-carte-lien {
   margin-top: 14px;
-  background: greenyellow;
+  background: #fff;
   border: 0px solid #fff;
   border-radius: 15px;
   text-decoration: none;
   outline: none;
+  box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
+  background: greenyellow;
 }
 
 .plat {
   display: flex;
   justify-content: space-between;
-  margin: 10px 20px 8px 10px;
+  margin: 12px 20px 10px 10px;
+}
+.plat-nom {
+  width: 90%;
 }
 .plat-nom-titre {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 0.8rem;
-  width: 227px;
+  font-size: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -278,17 +303,20 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 0px;
-  font-size: 0.83rem;
-  width: 227px;
+  font-size: 1.05rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.plat-prix {
+  width: 10%;
+  text-align: end;
+}
 .plat-prix-chiffre {
-  margin-top: 20px;
+  margin-top: 21px;
   margin-bottom: 0px;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .check {
@@ -377,6 +405,7 @@ body {
   flex-direction: column;
   background: #F6F6F6;
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 .section-index-titre {
   margin-top: 40px;
