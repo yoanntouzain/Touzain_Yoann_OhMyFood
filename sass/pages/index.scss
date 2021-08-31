@@ -148,3 +148,18 @@ body {
         }
     }
 }
+.icone-source {
+    display: none;
+}
+.coeur {
+    color: black;
+    font-weight: normal;
+    transition: 1s ease-out;
+    background-image: white;
+}
+.coeur:hover {
+    background-image: linear-gradient(45deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 900;
+}
