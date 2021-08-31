@@ -484,4 +484,22 @@ body {
   font-size: 1.3rem;
 }
 
+.icone-source {
+  display: none;
+}
+
+.coeur {
+  color: black;
+  font-weight: normal;
+  transition: 1s ease;
+  background-image: white;
+}
+
+.coeur:hover {
+  background-image: linear-gradient(45deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 900;
+}
+
 /*# sourceMappingURL=styles.css.map */
