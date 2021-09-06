@@ -6,6 +6,8 @@
     @include banniere;
 }
 .section-menu {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: -50px;
     background: $color-grey-light;
@@ -44,43 +46,79 @@
         @include decoration-none;
         @include box-shadow;
         background: greenyellow;
+        display: flex;
     }
 }
 .plat {
     display: flex;
-    justify-content: space-between;
-    margin: 12px 20px 10px 10px;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    width: 100%;
+    text-align: left;
+    /*margin: 12px 20px 10px 10px;*/
     &-nom {
-        width: 90%;
+        width: 82%;
         &-titre {
-            margin-top: 0px;
+            margin-top: 14px;
             margin-bottom: 0px;
             font-size: 1rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            width: 100%;
+            transition: all 1s;
         }
         &-description {
             margin-top: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 14px;
             margin-right: 0px;
-            font-size: 1.05rem;
+            font-size: 1.03rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            width: 100%;
+            transition: all 1s;
         }
     }
     &-prix {
-        width: 10%;
-        text-align: end;
+        text-align: right;
+        margin-left: auto;
+        transform: translateX(80%);
+        transition: transform 1s ease-in-out;
         &-chiffre {
-            margin-top: 21px;
+            margin-top: 36px;
             margin-bottom: 0px;
+            margin-right: 8px;
             font-weight: bold;
             font-size: 1rem;
         }
     }
-}
-.check {
-    display: none;
-}
+    & .check {
+        text-align: center;
+        padding-top: 24px;
+        font-size: 1.2rem;
+        background-color: $color-tertiary;
+        min-width: 13%;
+        border-radius:0px 15px 15px 0px;
+        transform: scaleX(0);
+        transition: transform 1s ease-in-out;
+        transform-origin: 100%;
+        & span i {
+        color: white;
+        }
+    }
+    &:hover > .check{
+        transform: scaleX(1);
+        span i {
+            animation: check-rotate 1s;
+        }
+    }
+    &:hover > .plat-prix{
+        transform: translateX(-80%);
+    }
+    &:hover > .plat-nom{
+        h3 ,p {
+            width: 84%;
+        }
+    }
+}/***************** lance sass ***********************/

@@ -107,6 +107,14 @@ a {
   color: black;
 }
 
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 .btn-explorer {
   padding: 14px 14px;
   border: none;
@@ -115,6 +123,7 @@ a {
   margin-right: 20%;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
   background: -webkit-linear-gradient(278deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
+  min-width: 170px;
 }
 .btn-explorer strong {
   font-size: 0.8rem;
@@ -125,6 +134,8 @@ a {
 }
 
 .validé-commande {
+  margin-right: 20%;
+  margin-left: 20%;
   margin-top: 30px;
   background: -webkit-linear-gradient(278deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
@@ -133,6 +144,7 @@ a {
   padding: 15px 45px;
   color: #fff;
   font-size: 0.9rem;
+  min-width: 170px;
 }
 
 .container-blanc {
@@ -240,6 +252,8 @@ a {
 }
 
 .section-menu {
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: -50px;
   background: #F6F6F6;
@@ -281,48 +295,82 @@ a {
   outline: none;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
   background: greenyellow;
+  display: flex;
 }
 
 .plat {
   display: flex;
-  justify-content: space-between;
-  margin: 12px 20px 10px 10px;
+  flex-wrap: nowrap;
+  margin-left: 10px;
+  width: 100%;
+  text-align: left;
+  /*margin: 12px 20px 10px 10px;*/
 }
 .plat-nom {
-  width: 90%;
+  width: 82%;
 }
 .plat-nom-titre {
-  margin-top: 0px;
+  margin-top: 14px;
   margin-bottom: 0px;
   font-size: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
+  transition: all 1s;
 }
 .plat-nom-description {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 14px;
   margin-right: 0px;
-  font-size: 1.05rem;
+  font-size: 1.03rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
+  transition: all 1s;
 }
 .plat-prix {
-  width: 10%;
-  text-align: end;
+  text-align: right;
+  margin-left: auto;
+  transform: translateX(80%);
+  transition: transform 1s ease-in-out;
 }
 .plat-prix-chiffre {
-  margin-top: 21px;
+  margin-top: 36px;
   margin-bottom: 0px;
+  margin-right: 8px;
   font-weight: bold;
   font-size: 1rem;
 }
-
-.check {
-  display: none;
+.plat .check {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 1.2rem;
+  background-color: #99e2d0;
+  min-width: 13%;
+  border-radius: 0px 15px 15px 0px;
+  transform: scaleX(0);
+  transition: transform 1s ease-in-out;
+  transform-origin: 100%;
+}
+.plat .check span i {
+  color: white;
+}
+.plat:hover > .check {
+  transform: scaleX(1);
+}
+.plat:hover > .check span i {
+  animation: check-rotate 1s;
+}
+.plat:hover > .plat-prix {
+  transform: translateX(-80%);
+}
+.plat:hover > .plat-nom h3, .plat:hover > .plat-nom p {
+  width: 84%;
 }
 
+/***************** lance sass ***********************/
 body {
   text-align: center;
 }
@@ -477,5 +525,53 @@ body {
   right: 25px;
   font-size: 1.3rem;
 }
+
+@keyframes like {
+  1% {
+    background: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: normal;
+  }
+  50% {
+    background: linear-gradient(45deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 500;
+  }
+  100% {
+    background: linear-gradient(45deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 900;
+  }
+}
+.coeur:hover {
+  animation: like 4s ease-in-out;
+}
+
+.coeur {
+  background-color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: normal;
+  transform-origin: 50% 100%;
+  transition: transform 2s;
+}
+
+/*.coeur::before {
+    background-color: purple;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: all 2s;
+    opacity: 0;
+}
+.coeur:hover::before {
+    background-color: transparent;
+    font-weight: 900;
+    background-image: linear-gradient(45deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
+    -webkit-background-clip: text;
+    opacity: 1;
+}*/
 
 /*# sourceMappingURL=styles.css.map */
