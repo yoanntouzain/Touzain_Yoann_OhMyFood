@@ -6,6 +6,7 @@
     margin-right: 20%;
     @include box-shadow;
     @include linear-gradient;
+    min-width: 170px;
     & strong {
         font-size: 0.8rem;
         color: $color-white;
@@ -15,6 +16,8 @@
     }
 }
 .validé-commande {
+    margin-right: 20%;
+    margin-left: 20%;
     margin-top: 30px;
     @include linear-gradient;
     @include box-shadow;
@@ -23,4 +26,5 @@
     padding: 15px 45px;
     color: $color-white;
     font-size: 0.9rem;
+    min-width: 170px;
 }
