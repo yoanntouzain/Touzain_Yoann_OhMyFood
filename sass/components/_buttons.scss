@@ -7,12 +7,16 @@
     @include box-shadow;
     @include linear-gradient;
     min-width: 170px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
     & strong {
         font-size: 0.8rem;
         color: $color-white;
     }
     &:hover {
-        background: $color-primary;
+        @include linear-gradient;
+        @include box-shadow-hover;
+        opacity: 0.8;
     }
 }
 .validé-commande {
@@ -27,4 +31,11 @@
     color: $color-white;
     font-size: 0.9rem;
     min-width: 170px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        @include linear-gradient;
+        @include box-shadow-hover;
+        opacity: 0.8;
+    }
 }
