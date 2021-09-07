@@ -32,9 +32,12 @@ body {
         border: none;
         border-radius: 15px;
         @include box-shadow;
-        background: $color-grey-light;
+        @include decoration-none;
+        background-color: $color-grey-light;
+        font-size: 0.9rem;
+        transition: all 0.3s ease-in-out;
         &:hover {
-            background: lighten($color: $color-primary, $amount: 35);
+            background-color: lighten($color: $color-primary, $amount: 35);
             & i {
                 color: darken($color: $color-primary, $amount: 5);
             }
@@ -57,12 +60,18 @@ body {
                 margin-right: 5px;
             }
             &-menu {
+                padding-top: 1px;
                 font-size: 0.9rem;
+            }
+            &-store {
+                padding-top: 3px;
+                font-size: 0.8rem;
             }
             & i {
                 margin-left: 10px;
                 color: $color-icons-grey;
                 margin-right: 15px;
+                transition: all 0.3s ease-in-out;
             }
             & strong {
                 font-family: 'Roboto-Bold';
