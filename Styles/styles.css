@@ -124,13 +124,17 @@ a {
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
   background: -webkit-linear-gradient(278deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
   min-width: 170px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 .btn-explorer strong {
   font-size: 0.8rem;
   color: #fff;
 }
 .btn-explorer:hover {
-  background: #9256dc;
+  background: -webkit-linear-gradient(278deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.67);
+  opacity: 0.8;
 }
 
 .validé-commande {
@@ -145,6 +149,13 @@ a {
   color: #fff;
   font-size: 0.9rem;
   min-width: 170px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.validé-commande:hover {
+  background: -webkit-linear-gradient(278deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.67);
+  opacity: 0.8;
 }
 
 .container-blanc {
@@ -408,10 +419,14 @@ body {
   border: none;
   border-radius: 15px;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
-  background: #F6F6F6;
+  text-decoration: none;
+  outline: none;
+  background-color: #F6F6F6;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
 }
 .critères-btn:hover {
-  background: #f1eafb;
+  background-color: #f1eafb;
 }
 .critères-btn:hover i {
   color: #8441d8;
@@ -435,12 +450,18 @@ body {
   margin-right: 5px;
 }
 .critères-btn-description-menu {
+  padding-top: 1px;
   font-size: 0.9rem;
+}
+.critères-btn-description-store {
+  padding-top: 3px;
+  font-size: 0.8rem;
 }
 .critères-btn-description i {
   margin-left: 10px;
   color: #808080;
   margin-right: 15px;
+  transition: all 0.3s ease-in-out;
 }
 .critères-btn-description strong {
   font-family: "Roboto-Bold";
