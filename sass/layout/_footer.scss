@@ -8,12 +8,21 @@
     &-div {
         display: flex;
         flex-direction: column;
+        @include mobile {
+            flex-direction: column;
+        }
         margin-left: 7%;
         &-titre {
             font-size: 1rem;
             margin: 0px
         }
         &-list {
+            display: flex;
+            justify-content: space-around;
+            @include mobile {
+                display: block;
+                justify-content: flex-start
+            }
             @include list-none;
             padding-left: 0px;
             &-li {

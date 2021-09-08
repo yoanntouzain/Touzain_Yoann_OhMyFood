@@ -2,15 +2,22 @@
     padding: 14px 14px;
     border: none;
     border-radius: 25px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 38%;
+    margin-right: 38%;
+    @include mobile {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
     @include box-shadow;
     @include linear-gradient;
     min-width: 170px;
     opacity: 1;
     transition: all 0.3s ease-in-out;
     & strong {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        @include mobile {
+            font-size: 0.8rem;
+        }
         color: $color-white;
     }
     &:hover {
