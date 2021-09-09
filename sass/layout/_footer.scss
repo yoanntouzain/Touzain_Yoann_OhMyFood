@@ -13,8 +13,13 @@
         }
         margin-left: 7%;
         &-titre {
-            font-size: 1rem;
-            margin: 0px
+            font-size: 1.1rem;
+            text-align: center;
+            @include mobile {
+                font-size: 1rem;
+                text-align: left;
+            }
+            margin: 0px;
         }
         &-list {
             display: flex;
