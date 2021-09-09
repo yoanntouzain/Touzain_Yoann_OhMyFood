@@ -1,5 +1,10 @@
 @mixin mobile {
-    @media screen and (max-width: map-get($breakpoints, mobile )) {
+    @media screen and (max-width: map-get($breakpoints-mobile, mobile )) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints-tablet, min-tablet)) and (max-width: map-get($breakpoints-tablet, max-tablet)) {
         @content;
     }
 }
@@ -34,5 +39,23 @@
     }
     100% {
         transform: rotate(1turn);
+    }
+}
+@keyframes animation-section-menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes animation-menu {
+    0% {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
     }
 }

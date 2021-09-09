@@ -1,10 +1,16 @@
 .search-ville {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    @include mobile {
+        font-size: 0.9rem;
+    }
     text-align: center;
     padding-top: 14px;
     padding-bottom: 14px;
     & input {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        @include mobile {
+            font-size: 0.8rem;
+        }
         text-align: center;
         padding-left: 0px;
         width: 68%;

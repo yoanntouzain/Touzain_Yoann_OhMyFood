@@ -8,22 +8,33 @@ body {
     padding-bottom: 44px;
     background: $color-grey-light;
     &  h1 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    @include mobile {
+        font-size: 1.1rem;
+    }
     margin: 2% 12% 1% 12%;
     }
     & p {
         margin: 0% 3% 8% 3%;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        @include mobile {
+            font-size: 1rem;
+        }
     }
 }
 .critères {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include mobile {
+        flex-direction: column;
+    }
     margin-left: 7%;
     margin-right: 8%;
     &-titre {
         font-size: 1.2rem;
         text-align: left;
+        width: 100%;
     }
     &-btn {
         margin-top: 20px;
@@ -36,6 +47,13 @@ body {
         background-color: $color-grey-light;
         font-size: 0.9rem;
         transition: all 0.3s ease-in-out;
+        width: 42%;
+        @include tablet {
+            width: 35%;
+        }
+        @include mobile {
+            width: auto;
+        }
         &:hover {
             background-color: lighten($color: $color-primary, $amount: 35);
             & i {
@@ -48,8 +66,12 @@ body {
             top: 18px;
             border: 0px solid $color-primary;
             border-radius: 100%;
-            padding: 4px 6px;
-            font-size: 0.7rem;
+            padding: 4px 7px;
+            font-size: 0.8rem;
+            @include mobile {
+                font-size: 0.7rem;
+                padding: 4px 6px;
+            }
             color: $color-white;
             background: $color-primary;
         }
@@ -97,50 +119,62 @@ body {
 .container-vignettes {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 7%;
-    margin-right: 7%;
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-right: 2%;
+    @include mobile {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
     &-lien {
         position: relative;
         background: $color-white;
         border: 0px solid $color-white;
         border-radius: 15px;
         @include decoration-none;
-        width: 100%;
+        width: 43%;
+        @include mobile {
+            width: 100%;
+        }
         background: greenyellow;
         margin-bottom: 18px;
         @include box-shadow
     }
 }
-.container-vignettes-lien  .vignettes {
-    &-img {
-        width: 100%;
-        height: 160px;
-        & img {
+.vignettes-img {
+    width: 100%;
+    height: 160px;
+    & img {
         width: 100%;
         height: 100%;
         border: 0px solid $color-white;
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
-        }
-        &-nouveau {
-            position: absolute;
-            top: 10px;
-            right: 11px;
-            border: 0px solid $color-tertiary;
-            border-radius: 3px;
-            padding: 5px 10px;
-            background: $color-tertiary;
-            color: darken($color: $color-tertiary, $amount: 40);
-            font-family: "Roboto-light";
-        }
     }
+    &-nouveau {
+        position: absolute;
+        top: 10px;
+        right: 11px;
+        border: 0px solid $color-tertiary;
+        border-radius: 3px;
+        padding: 5px 10px;
+        background: $color-tertiary;
+        color: darken($color: $color-tertiary, $amount: 40);
+        font-family: "Roboto-light";
+    }
+}
+.vignettes-container {
+    display: flex;
+    justify-content: space-between;
     &-description {
-        position: relative;
         text-align: left;
         margin-left: 10px;
         margin-bottom: 14px;
         &-titre {
             font-size: 1rem;
+            @include tablet {
+                font-size: 0.9rem;
+            }
             margin-bottom: 0px;
         }
         &-paragraphe {
@@ -148,13 +182,11 @@ body {
             margin-top: 2px;
             margin-bottom: 0px;
         }
-        &-icone {
-            position: absolute;
-            cursor: pointer;
-            top: 6px;
-            right: 25px;
-            font-size: 1.3rem;
-        }
+    }
+    &-icone {
+        margin-top: 5%;
+        margin-right: 8%;
+        font-size: 1.4rem;
     }
 }
 @keyframes like { 
