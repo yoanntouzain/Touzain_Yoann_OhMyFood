@@ -27,8 +27,12 @@
     }
 }
 .validé-commande {
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-left: 38%;
+    margin-right: 38%;
+    @include mobile {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
     margin-top: 30px;
     @include linear-gradient;
     @include box-shadow;
