@@ -4,6 +4,10 @@
     border-radius: 25px;
     margin-left: 38%;
     margin-right: 38%;
+    @include tablet {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
     @include mobile {
         margin-left: 20%;
         margin-right: 20%;
@@ -29,6 +33,10 @@
 .validé-commande {
     margin-left: 38%;
     margin-right: 38%;
+    @include tablet {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
     @include mobile {
         margin-left: 20%;
         margin-right: 20%;
