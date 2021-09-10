@@ -481,7 +481,7 @@ a {
   font-size: 1.2rem;
   background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
-  min-width: 19%;
+  min-width: 13%;
   transform: scaleX(0);
   transition: all 1s ease-in-out;
   transform-origin: 100%;
