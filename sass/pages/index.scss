@@ -22,7 +22,7 @@ body {
         }
     }
 }
-.critères {
+.criteres {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -36,70 +36,69 @@ body {
         text-align: left;
         width: 100%;
     }
-    &-btn {
-        margin-top: 20px;
-        position: relative;
-        padding: 20px;
-        border: none;
-        border-radius: 15px;
-        @include box-shadow;
-        @include decoration-none;
-        background-color: $color-grey-light;
-        font-size: 0.9rem;
-        transition: all 0.3s ease-in-out;
-        width: 42%;
-        @include tablet {
-            width: 35%;
-        }
+}
+.criteres-btn {
+    margin-top: 20px;
+    position: relative;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    @include box-shadow;
+    @include decoration-none;
+    background-color: $color-grey-light;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+    width: 42%;
+    @include tablet {
+        width: 35%;
+    }
+    @include mobile {
+        width: auto;
+    }
+    &-chiffre {
+        position: absolute;
+        left: -10px;
+        top: 18px;
+        border: 0px solid $color-primary;
+        border-radius: 100%;
+        padding: 4px 7px;
+        font-size: 0.8rem;
         @include mobile {
-            width: auto;
+            font-size: 0.7rem;
+            padding: 4px 6px;
         }
-        &:hover {
-            background-color: lighten($color: $color-primary, $amount: 35);
-            & i {
-                color: darken($color: $color-primary, $amount: 5);
-            }
-        }
-        &-chiffre {
-            position: absolute;
-            left: -10px;
-            top: 18px;
-            border: 0px solid $color-primary;
-            border-radius: 100%;
-            padding: 4px 7px;
-            font-size: 0.8rem;
-            @include mobile {
-                font-size: 0.7rem;
-                padding: 4px 6px;
-            }
-            color: $color-white;
-            background: $color-primary;
-        }
-        &-description {
-            display: flex;
-            &-mobile {
-                font-size: 1rem;
-                margin-right: 5px;
-            }
-            &-menu {
-                padding-top: 1px;
-                font-size: 0.9rem;
-            }
-            &-store {
-                padding-top: 3px;
-                font-size: 0.8rem;
-            }
-            & i {
-                margin-left: 10px;
-                color: $color-icons-grey;
-                margin-right: 15px;
-                transition: all 0.3s ease-in-out;
-            }
-            & strong {
-                font-family: 'Roboto-Bold';
-                font-weight: bold;
-            }
-        }
+        color: $color-white;
+        background: $color-primary;
+    }
+}
+.criteres-btn:hover {
+    background-color: lighten($color: $color-primary, $amount: 35);
+    & i {
+        color: darken($color: $color-primary, $amount: 5);
+    }
+}
+.criteres-btn-description {
+    display: flex;
+    &-mobile {
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+    &-menu {
+        padding-top: 1px;
+        font-size: 0.9rem;
+    }
+    &-store {
+        padding-top: 3px;
+        font-size: 0.8rem;
+    }
+    & i {
+        margin-left: 10px;
+        color: $color-icons-grey;
+        margin-right: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+    & strong {
+        font-family: 'Roboto-Bold';
     }
 }
     /*Section*/
@@ -166,29 +165,30 @@ body {
 .vignettes-container {
     display: flex;
     justify-content: space-between;
-    &-description {
-        text-align: left;
-        margin-left: 10px;
-        margin-bottom: 14px;
-        &-titre {
-            font-size: 1rem;
-            @include tablet {
-                font-size: 0.9rem;
-            }
-            margin-bottom: 0px;
+}
+.vignettes-container-description {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 14px;
+    &-titre {
+        font-size: 1rem;
+        @include tablet {
+            font-size: 0.9rem;
         }
-        &-paragraphe {
-            font-size: 0.95rem;
-            margin-top: 2px;
-            margin-bottom: 0px;
-        }
+        margin-bottom: 0px;
     }
-    &-icone {
-        margin-top: 5%;
-        margin-right: 8%;
-        font-size: 1.4rem;
+    &-paragraphe {
+        font-size: 0.95rem;
+        margin-top: 2px;
+        margin-bottom: 0px;
     }
 }
+.vignettes-container-icone {
+    margin-top: 5%;
+    margin-right: 8%;
+    font-size: 1.4rem;
+}
+        /*Phase test sur le coeur*/
 @keyframes like { 
     1% {
         background: black;
@@ -208,7 +208,7 @@ body {
         -webkit-background-clip: text;
         font-weight: 900;
     }
-}
+}/*
 .coeur:hover {
     animation: like 4s ease-in-out;
 
@@ -220,18 +220,38 @@ body {
     font-weight: normal;
     transform-origin: 50% 100%;
     transition: transform 2s;
-}
-/*.coeur::before {
-    background-color: purple;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    transition: all 2s;
-    opacity: 0;
-}
-.coeur:hover::before {
-    background-color: transparent;
-    font-weight: 900;
-    background-image: linear-gradient(45deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
-    -webkit-background-clip: text;
-    opacity: 1;
 }*/
+.coeur {
+    width: 30px;
+    height: 30px;
+    color: black;
+    background: transparent;
+    font-weight: normal;
+    transform-origin: 0%;
+
+}
+.coeur:hover {
+    animation: test 2s ease-in-out;
+}
+@keyframes test {
+    0% {
+        transform: translateY(0%);
+        background-image: black;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: normal;
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        background-image: linear-gradient(45deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 900;
+        opacity: 1;
+    }
+}
