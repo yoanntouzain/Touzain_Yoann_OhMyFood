@@ -8,3 +8,6 @@ $color-grey-dark: #EAEAEA;
 $color-grey-light: #F6F6F6;
 $color-icons-grey: #808080;
 $color-footer: #353535;
+$spinner-load-dur: 3s;
+$spinner-load-delay: 0.5s;
+$container-body-delay: $spinner-load-dur + $spinner-load-delay*2;
