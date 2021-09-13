@@ -107,6 +107,10 @@ a {
   color: black;
 }
 
+input, p, footer {
+  font-family: "Roboto-Light";
+}
+
 @keyframes check-rotate {
   0% {
     transform: rotate(0turn);
@@ -160,6 +164,7 @@ a {
 .btn-explorer strong {
   font-size: 0.9rem;
   color: #fff;
+  font-family: "Roboto-Bold";
 }
 @media screen and (max-width: 415px) {
   .btn-explorer strong {
@@ -182,6 +187,7 @@ a {
   border-radius: 25px;
   padding: 15px 45px;
   color: #fff;
+  font-family: "Roboto-Bold";
   font-size: 0.9rem;
   min-width: 170px;
   opacity: 1;
@@ -363,6 +369,7 @@ a {
     top: -50px;
   }
 }
+
 .section-menu-container {
   display: flex;
   flex-wrap: nowrap;
@@ -432,8 +439,8 @@ a {
   flex-wrap: nowrap;
   margin-left: 10px;
   width: 100%;
-  /*margin: 12px 20px 10px 10px;*/
 }
+
 .plat-nom {
   width: 90%;
   overflow: hidden;
@@ -461,6 +468,7 @@ a {
   width: 100%;
   transition: all 1s;
 }
+
 .plat-prix {
   text-align: center;
   width: 17%;
@@ -475,6 +483,7 @@ a {
   font-weight: bold;
   font-size: 0.93rem;
 }
+
 .plat .check {
   text-align: center;
   padding-top: 24px;
@@ -489,6 +498,7 @@ a {
 .plat .check span i {
   color: white;
 }
+
 .plat:hover > .check {
   min-width: 21%;
   transform: scaleX(1);
@@ -496,16 +506,17 @@ a {
 .plat:hover > .check span i {
   animation: check-rotate 1s;
 }
+
 .plat:hover > .plat-prix {
   text-align: center;
   transform: translateX(-10%);
   width: 18%;
 }
+
 .plat:hover > .plat-nom {
   width: 61%;
 }
 
-/***************** lance sass ***********************/
 body {
   text-align: center;
 }
@@ -536,7 +547,7 @@ body {
   }
 }
 
-.critères {
+.criteres {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -544,16 +555,17 @@ body {
   margin-right: 8%;
 }
 @media screen and (max-width: 415px) {
-  .critères {
+  .criteres {
     flex-direction: column;
   }
 }
-.critères-titre {
+.criteres-titre {
   font-size: 1.2rem;
   text-align: left;
   width: 100%;
 }
-.critères-btn {
+
+.criteres-btn {
   margin-top: 20px;
   position: relative;
   padding: 20px;
@@ -568,22 +580,16 @@ body {
   width: 42%;
 }
 @media screen and (min-width: 416px) and (max-width: 1024px) {
-  .critères-btn {
+  .criteres-btn {
     width: 35%;
   }
 }
 @media screen and (max-width: 415px) {
-  .critères-btn {
+  .criteres-btn {
     width: auto;
   }
 }
-.critères-btn:hover {
-  background-color: #f1eafb;
-}
-.critères-btn:hover i {
-  color: #8441d8;
-}
-.critères-btn-chiffre {
+.criteres-btn-chiffre {
   position: absolute;
   left: -10px;
   top: 18px;
@@ -595,35 +601,42 @@ body {
   background: #9256dc;
 }
 @media screen and (max-width: 415px) {
-  .critères-btn-chiffre {
+  .criteres-btn-chiffre {
     font-size: 0.7rem;
     padding: 4px 6px;
   }
 }
-.critères-btn-description {
+
+.criteres-btn:hover {
+  background-color: #f1eafb;
+}
+.criteres-btn:hover i {
+  color: #8441d8;
+}
+
+.criteres-btn-description {
   display: flex;
 }
-.critères-btn-description-mobile {
+.criteres-btn-description-mobile {
   font-size: 1rem;
   margin-right: 5px;
 }
-.critères-btn-description-menu {
+.criteres-btn-description-menu {
   padding-top: 1px;
   font-size: 0.9rem;
 }
-.critères-btn-description-store {
+.criteres-btn-description-store {
   padding-top: 3px;
   font-size: 0.8rem;
 }
-.critères-btn-description i {
+.criteres-btn-description i {
   margin-left: 10px;
   color: #808080;
   margin-right: 15px;
   transition: all 0.3s ease-in-out;
 }
-.critères-btn-description strong {
+.criteres-btn-description strong {
   font-family: "Roboto-Bold";
-  font-weight: bold;
 }
 
 /*Section*/
@@ -699,6 +712,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .vignettes-container-description {
   text-align: left;
   margin-left: 10px;
@@ -718,12 +732,14 @@ body {
   margin-top: 2px;
   margin-bottom: 0px;
 }
+
 .vignettes-container-icone {
   margin-top: 5%;
   margin-right: 8%;
   font-size: 1.4rem;
 }
 
+/*Phase test sur le coeur*/
 @keyframes like {
   1% {
     background: black;
@@ -744,32 +760,53 @@ body {
     font-weight: 900;
   }
 }
+/*
 .coeur:hover {
-  animation: like 4s ease-in-out;
-}
+    animation: like 4s ease-in-out;
 
+}
 .coeur {
-  background-color: black;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: normal;
-  transform-origin: 50% 100%;
-  transition: transform 2s;
-}
-
-/*.coeur::before {
-    background-color: purple;
+    background-color: black;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    transition: all 2s;
-    opacity: 0;
-}
-.coeur:hover::before {
-    background-color: transparent;
-    font-weight: 900;
-    background-image: linear-gradient(45deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
-    -webkit-background-clip: text;
-    opacity: 1;
+    font-weight: normal;
+    transform-origin: 50% 100%;
+    transition: transform 2s;
 }*/
+.coeur {
+  width: 30px;
+  height: 30px;
+  color: black;
+  background: transparent;
+  font-weight: normal;
+  transform-origin: 0%;
+}
+
+.coeur:hover {
+  animation: test 2s ease-in-out;
+}
+
+@keyframes test {
+  0% {
+    transform: translateY(0%);
+    background-image: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: normal;
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    background-image: linear-gradient(45deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 900;
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
