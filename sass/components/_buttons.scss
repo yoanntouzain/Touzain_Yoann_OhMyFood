@@ -23,6 +23,8 @@
             font-size: 0.8rem;
         }
         color: $color-white;
+        font-family: 'Roboto-Bold';
+
     }
     &:hover {
         @include linear-gradient;
@@ -48,6 +50,7 @@
     border-radius: 25px;
     padding: 15px 45px;
     color: $color-white;
+    font-family: 'Roboto-Bold';
     font-size: 0.9rem;
     min-width: 170px;
     opacity: 1;
