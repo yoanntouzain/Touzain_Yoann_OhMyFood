@@ -1,6 +1,23 @@
 body {
     text-align: center;
 }
+.container-body {
+    position: relative;
+    &-page {
+        position: absolute;
+        width: 100%;
+        animation: container-body 0s $container-body-delay both;
+    }
+}
+.spinner {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    font-size: 20rem;
+    top: 150px;
+    animation: spinner-load $spinner-load-dur $spinner-load-delay ease-out both;
+}
 .reserve-menu {
     display: flex;
     flex-direction: column;
@@ -31,6 +48,7 @@ body {
     }
     margin-left: 7%;
     margin-right: 8%;
+    background: $color-white;
     &-titre {
         font-size: 1.2rem;
         text-align: left;

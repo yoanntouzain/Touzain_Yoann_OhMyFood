@@ -59,3 +59,27 @@
         opacity: 1;
     }
 }
+@keyframes spinner-load {
+    0% {
+        color: $color-primary;
+        transform: rotate(0turn);
+    }
+    30% {
+        color: $color-secondary;
+    }
+    60% {
+        color: $color-primary;
+    }
+    100% {
+        transform: rotate(2turn);
+        color: $color-secondary;
+    }
+}
+@keyframes container-body {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
