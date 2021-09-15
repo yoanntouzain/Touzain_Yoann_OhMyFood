@@ -6,7 +6,7 @@ body {
     &-page {
         position: absolute;
         width: 100%;
-        animation: container-body 0s $container-body-delay both;
+       animation: container-body 0s $container-body-delay both;
     }
 }
 .spinner {
@@ -153,7 +153,6 @@ body {
         @include mobile {
             width: 100%;
         }
-        background: greenyellow;
         margin-bottom: 18px;
         @include box-shadow
     }
@@ -206,70 +205,48 @@ body {
     margin-right: 8%;
     font-size: 1.4rem;
 }
-        /*Phase test sur le coeur*/
-@keyframes like { 
-    1% {
-        background: black;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        font-weight: normal;
-    }
-    50% {
-        background: linear-gradient(45deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        font-weight: 500;
-    }
-    100% {
-        background: linear-gradient(45deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        font-weight: 900;
-    }
-}/*
-.coeur:hover {
-    animation: like 4s ease-in-out;
-
-}
-.coeur {
+.like__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    position: relative;
     background-color: black;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: normal;
-    transform-origin: 50% 100%;
-    transition: transform 2s;
-}*/
-.coeur {
-    width: 30px;
-    height: 30px;
-    color: black;
-    background: transparent;
-    font-weight: normal;
-    transform-origin: 0%;
-
-}
-.coeur:hover {
-    animation: test 2s ease-in-out;
-}
-@keyframes test {
-    0% {
-        transform: translateY(0%);
-        background-image: black;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        font-weight: normal;
+    &:hover::before {
         opacity: 1;
     }
-    50% {
-        transform: translateY(100%);
+    &::before {
         opacity: 0;
+        transition: 0.5s;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
     }
-    100% {
-        transform: translateY(0%);
-        background-image: linear-gradient(45deg, $color-secondary, $color-secondary 5%, $color-primary 100%, $color-primary);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+}
+    
+.heart__like {
+    transition-duration: 0.25s;
+    background-color: $color-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    mix-blend-mode: lighten;
+    font-weight: normal;
+    &:hover {
         font-weight: 900;
-        opacity: 1;
     }
 }

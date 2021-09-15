@@ -417,6 +417,52 @@ input, p, footer {
   }
 }
 
+.like__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+.like__btn:hover::before {
+  opacity: 1;
+}
+.like__btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9256dc 0%, #ff79da 100%);
+}
+
+.heart__like__menu {
+  transition-duration: 0.25s;
+  background-color: #F6F6F6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+  font-weight: normal;
+}
+.heart__like__menu:hover {
+  font-weight: 900;
+}
+
 .section-menu-carte {
   text-align: left;
   display: flex;
@@ -445,7 +491,7 @@ input, p, footer {
   width: 3.5rem;
   margin-bottom: 0px;
 }
-.section-menu-carte-lien {
+.section-menu-carte-lien1, .section-menu-carte-lien2, .section-menu-carte-lien3 {
   margin-top: 14px;
   background: #fff;
   border: 0px solid #fff;
@@ -454,8 +500,18 @@ input, p, footer {
   outline: none;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
   display: flex;
+}
+.section-menu-carte-lien1 {
   transform-origin: bottom;
   animation: animation-menu 1s ease-in-out;
+}
+.section-menu-carte-lien2 {
+  transform-origin: bottom;
+  animation: animation-menu 2s ease-in-out;
+}
+.section-menu-carte-lien3 {
+  transform-origin: bottom;
+  animation: animation-menu 3s ease-in-out;
 }
 
 .plat {
@@ -719,7 +775,6 @@ body {
   text-decoration: none;
   outline: none;
   width: 43%;
-  background: greenyellow;
   margin-bottom: 18px;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
 }
@@ -783,74 +838,50 @@ body {
   font-size: 1.4rem;
 }
 
-/*Phase test sur le coeur*/
-@keyframes like {
-  1% {
-    background: black;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: normal;
-  }
-  50% {
-    background: linear-gradient(45deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: 500;
-  }
-  100% {
-    background: linear-gradient(45deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: 900;
-  }
+.like__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
 }
-/*
-.coeur:hover {
-    animation: like 4s ease-in-out;
+.like__btn:hover::before {
+  opacity: 1;
+}
+.like__btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9256dc 0%, #ff79da 100%);
+}
 
-}
-.coeur {
-    background-color: black;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: normal;
-    transform-origin: 50% 100%;
-    transition: transform 2s;
-}*/
-.coeur {
-  width: 30px;
-  height: 30px;
-  color: black;
-  background: transparent;
+.heart__like {
+  transition-duration: 0.25s;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
   font-weight: normal;
-  transform-origin: 0%;
 }
-
-.coeur:hover {
-  animation: test 2s ease-in-out;
-}
-
-@keyframes test {
-  0% {
-    transform: translateY(0%);
-    background-image: black;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: normal;
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    background-image: linear-gradient(45deg, #ff79da, #ff79da 5%, #9256dc 100%, #9256dc);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: 900;
-    opacity: 1;
-  }
+.heart__like:hover {
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=styles.css.map */
