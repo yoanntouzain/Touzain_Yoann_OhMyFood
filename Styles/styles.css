@@ -491,7 +491,7 @@ input, p, footer {
   width: 3.5rem;
   margin-bottom: 0px;
 }
-.section-menu-carte-lien {
+.section-menu-carte-lien1, .section-menu-carte-lien2, .section-menu-carte-lien3 {
   margin-top: 14px;
   background: #fff;
   border: 0px solid #fff;
@@ -500,8 +500,18 @@ input, p, footer {
   outline: none;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.67);
   display: flex;
+}
+.section-menu-carte-lien1 {
   transform-origin: bottom;
   animation: animation-menu 1s ease-in-out;
+}
+.section-menu-carte-lien2 {
+  transform-origin: bottom;
+  animation: animation-menu 2s ease-in-out;
+}
+.section-menu-carte-lien3 {
+  transform-origin: bottom;
+  animation: animation-menu 3s ease-in-out;
 }
 
 .plat {

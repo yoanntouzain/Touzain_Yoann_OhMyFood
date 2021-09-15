@@ -105,7 +105,7 @@
         width: 3.5rem;
         margin-bottom: 0px;
     }
-    &-lien {
+    &-lien1, &-lien2, &-lien3 {
         margin-top: 14px;
         background: $color-white;
         border: 0px solid $color-white;
@@ -113,8 +113,18 @@
         @include decoration-none;
         @include box-shadow;
         display: flex;
+    }
+    &-lien1 {
         transform-origin: bottom;
         animation: animation-menu 1s ease-in-out;
+    }
+    &-lien2 {
+        transform-origin: bottom;
+        animation: animation-menu 2s ease-in-out;
+    }
+    &-lien3 {
+        transform-origin: bottom;
+        animation: animation-menu 3s ease-in-out;
     }
 }
 .plat {
