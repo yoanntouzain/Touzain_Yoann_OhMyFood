@@ -1,219 +1,221 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <script src="https://kit.fontawesome.com/2cc0192606.js" crossorigin="anonymous"></script><!--Pour intégrer les icones-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Styles/styles.css">
-        <title>Oh my food</title>
-    </head>
-    <body class="container-body">
-        <div class="spinner">
-            <i class="fas fa-utensils"></i>
-        </div>
-        <div class="container-body-page">
-            <header class="header">
-                <div class="container-blanc">
-                    <div class="container-blanc-logo">
-                        <img src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo"/>
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/2cc0192606.js" crossorigin="anonymous"></script>
+    <!--Pour intégrer les icones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+    <title>Oh my food</title>
+</head>
+
+<body class="container-body">
+    <div class="spinner">
+        <i class="fas fa-utensils"></i>
+    </div>
+    <div class="container-body-page">
+        <header class="header">
+            <div class="container-blanc">
+                <div class="container-blanc-logo">
+                    <img src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo" />
                 </div>
-                <nav class="nav">
-                    <form method="POST" action="traitement.php">
-                        <div class="search-ville">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <input type="text"  maxlength="30" placeholder="Paris, Belleville"/>
-                        </div>
-                    </form>
-                </nav>
-            </header>
-            <div class="reserve-menu">
-                <h1>
-                    Réservez le menu qui vous convient
-                </h1>
-                <p>
-                    Découvrez des restaurants d'exception, séléctionnés par nos soins.
-                </p>
-                <button class="btn-explorer">
+            </div>
+            <nav class="nav">
+                <form method="POST" action="traitement.php">
+                    <div class="search-ville">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" maxlength="30" placeholder="Paris, Belleville" />
+                    </div>
+                </form>
+            </nav>
+        </header>
+        <div class="reserve-menu">
+            <h1>
+                Réservez le menu qui vous convient
+            </h1>
+            <p>
+                Découvrez des restaurants d'exception, séléctionnés par nos soins.
+            </p>
+            <button class="btn-explorer">
                     <strong>
                         Explorer nos restaurants
                     </strong>
                 </button>
-            </div>
-            <div class="criteres">
-                <h1 class="criteres-titre">
-                    Fonctionnement
-                </h1>
-                <a href="#" class="criteres-btn">
-                    <div class="criteres-btn-chiffre">
-                        1
-                    </div>
-                    <div class="criteres-btn-description">
-                        <span class="criteres-btn-description-mobile">
-                            <i class="fas fa-mobile-alt"></i>
-                        </span>
-                        <strong> 
-                            Choississez un restaurant
-                        </strong>
-                    </div>
-                </a>
-                <a href="#" class="criteres-btn">
-                    <div class="criteres-btn-chiffre">
-                        2
-                    </div>
-                    <div class="criteres-btn-description">
-                        <span class="criteres-btn-description-menu">
-                            <i class="fas fa-list-ul"></i>
-                        </span>
-                        <strong>
-                            Composez votre menu
-                        </strong>
-                    </div>
-                </a>
-                <a href="#" class="criteres-btn">
-                    <div class="criteres-btn-chiffre">
-                        3
-                    </div>
-                    <div class="criteres-btn-description">
-                        <span class="criteres-btn-description-store">
-                            <i class="fas fa-store"></i>
-                        </span>
-                        <strong>
-                            Dégustez un restaurant
-                        </strong>
-                    </div>
-                </a>
-            </div>
-            <section class="section-index">
-                <h2 class="section-index-titre">
-                    Restaurants
-                </h2>
-                <div class="container-vignettes">
-                    <a href="la_palette_du_gout.html" class="container-vignettes-lien">
-                        <div class="vignettes">
-                            <div class="vignettes-img">
-                                <img src="Maquettes_Ohmyfood/images/restaurants/La_palette_du_goût.jpg" alt="image La palette du goût"/>
-                                <div class="vignettes-img-nouveau">
-                                    Nouveau
-                                </div>
-                            </div>
-                            <div class="vignettes-container">
-                                <div class="vignettes-container-description">
-                                    <h2 class="vignettes-container-description-titre">
-                                        La palette du goût
-                                    </h2>
-                                    <p class="vignettes-container-description-paragraphe">
-                                        Ménilmontant
-                                    </p>
-                                </div>
-                                <div class="vignettes-container-icone">
-                                    <span class="like__btn">
-                                        <i class="heart__like fas fa-heart"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="la_note_enchantée.html" class="container-vignettes-lien">
-                        <div class="vignettes">
-                            <div class="vignettes-img">
-                                <img src="Maquettes_Ohmyfood/images/restaurants/La_note_enchantée.jpg" alt="image La note enchantée"/>
-                                <div class="vignettes-img-nouveau">
-                                    Nouveau
-                                </div>
-                            </div>
-                            <div class="vignettes-container">
-                                <div class="vignettes-container-description">
-                                    <h2 class="vignettes-container-description-titre">
-                                        La note enchantée
-                                    </h2>
-                                    <p class="vignettes-container-description-paragraphe">
-                                        Charonne
-                                    </p>
-                                </div>
-                                <div class="vignettes-container-icone">
-                                    <span class="like__btn">
-                                        <i class="heart__like fas fa-heart"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="a_la_française.html" class="container-vignettes-lien">
-                        <div class="vignettes">
-                            <div class="vignettes-img">
-                                <img src="Maquettes_Ohmyfood/images/restaurants/A_la_française.jpg" alt="image À la française"/>
-                            </div>
-                            <div class="vignettes-container">
-                                    <div class="vignettes-container-description">
-                                        <h2 class="vignettes-container-description-titre">
-                                        À la française
-                                    </h2>
-                                    <p class="vignettes-container-description-paragraphe">
-                                        Cité Rouge
-                                    </p>
-                                </div>
-                                <div class="vignettes-container-icone">
-                                    <span class="like__btn">
-                                        <i class="heart__like fas fa-heart"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="le_délice_des_sens.html" class="container-vignettes-lien">
-                        <div class="vignettes">
-                            <div class="vignettes-img">
-                                <img src="Maquettes_Ohmyfood/images/restaurants/Le_délice_des_sens.jpg" alt="image Le délice des sens">
-                            </div>
-                            <div class="vignettes-container">
-                                <div class="vignettes-container-description">
-                                    <h2 class="vignettes-container-description-titre">
-                                        Le délice des sens
-                                    </h2>
-                                    <p class="vignettes-container-description-paragraphe">
-                                        Folie-Méricourt
-                                    </p>
-                                </div>
-                                <div class="vignettes-container-icone">
-                                    <span class="like__btn">
-                                        <i class="heart__like fas fa-heart"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+        </div>
+        <div class="criteres">
+            <h1 class="criteres-titre">
+                Fonctionnement
+            </h1>
+            <a href="#" class="criteres-btn">
+                <div class="criteres-btn-chiffre">
+                    1
                 </div>
-            </section>
-            <footer class="footer">
-                <div class="footer-div">
-                    <h1 class="footer-div-titre">
-                        Ohmyfood
-                    </h1>
-                    <ul class="footer-div-list">
-                        <li class="footer-div-list-li">
-                            <span class="footer-div-list-li-utensils">
+                <div class="criteres-btn-description">
+                    <span class="criteres-btn-description-mobile">
+                        <i class="fas fa-mobile-alt"></i>
+                    </span>
+                    <strong>
+                        Choississez un restaurant
+                    </strong>
+                </div>
+            </a>
+            <a href="#" class="criteres-btn">
+                <div class="criteres-btn-chiffre">
+                    2
+                </div>
+                <div class="criteres-btn-description">
+                    <span class="criteres-btn-description-menu">
+                        <i class="fas fa-list-ul"></i>
+                    </span>
+                    <strong>
+                        Composez votre menu
+                    </strong>
+                </div>
+            </a>
+            <a href="#" class="criteres-btn">
+                <div class="criteres-btn-chiffre">
+                    3
+                </div>
+                <div class="criteres-btn-description">
+                    <span class="criteres-btn-description-store">
+                        <i class="fas fa-store"></i>
+                    </span>
+                    <strong>
+                        Dégustez un restaurant
+                    </strong>
+                </div>
+            </a>
+        </div>
+        <section class="section-index">
+            <h2 class="section-index-titre">
+                Restaurants
+            </h2>
+            <div class="container-vignettes">
+                <a href="la_palette_du_gout.html" class="container-vignettes-lien">
+                    <div class="vignettes">
+                        <div class="vignettes-img">
+                            <img src="Maquettes_Ohmyfood/images/restaurants/La_palette_du_goût.jpg" alt="image La palette du goût" />
+                            <div class="vignettes-img-nouveau">
+                                Nouveau
+                            </div>
+                        </div>
+                        <div class="vignettes-container">
+                            <div class="vignettes-container-description">
+                                <h2 class="vignettes-container-description-titre">
+                                    La palette du goût
+                                </h2>
+                                <p class="vignettes-container-description-paragraphe">
+                                    Ménilmontant
+                                </p>
+                            </div>
+                            <div class="vignettes-container-icone">
+                                <span class="like__btn">
+                                        <i class="heart__like fas fa-heart"></i>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="la_note_enchantée.html" class="container-vignettes-lien">
+                    <div class="vignettes">
+                        <div class="vignettes-img">
+                            <img src="Maquettes_Ohmyfood/images/restaurants/La_note_enchantée.jpg" alt="image La note enchantée" />
+                            <div class="vignettes-img-nouveau">
+                                Nouveau
+                            </div>
+                        </div>
+                        <div class="vignettes-container">
+                            <div class="vignettes-container-description">
+                                <h2 class="vignettes-container-description-titre">
+                                    La note enchantée
+                                </h2>
+                                <p class="vignettes-container-description-paragraphe">
+                                    Charonne
+                                </p>
+                            </div>
+                            <div class="vignettes-container-icone">
+                                <span class="like__btn">
+                                        <i class="heart__like fas fa-heart"></i>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="a_la_française.html" class="container-vignettes-lien">
+                    <div class="vignettes">
+                        <div class="vignettes-img">
+                            <img src="Maquettes_Ohmyfood/images/restaurants/A_la_française.jpg" alt="image À la française" />
+                        </div>
+                        <div class="vignettes-container">
+                            <div class="vignettes-container-description">
+                                <h2 class="vignettes-container-description-titre">
+                                    À la française
+                                </h2>
+                                <p class="vignettes-container-description-paragraphe">
+                                    Cité Rouge
+                                </p>
+                            </div>
+                            <div class="vignettes-container-icone">
+                                <span class="like__btn">
+                                        <i class="heart__like fas fa-heart"></i>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="le_délice_des_sens.html" class="container-vignettes-lien">
+                    <div class="vignettes">
+                        <div class="vignettes-img">
+                            <img src="Maquettes_Ohmyfood/images/restaurants/Le_délice_des_sens.jpg" alt="image Le délice des sens">
+                        </div>
+                        <div class="vignettes-container">
+                            <div class="vignettes-container-description">
+                                <h2 class="vignettes-container-description-titre">
+                                    Le délice des sens
+                                </h2>
+                                <p class="vignettes-container-description-paragraphe">
+                                    Folie-Méricourt
+                                </p>
+                            </div>
+                            <div class="vignettes-container-icone">
+                                <span class="like__btn">
+                                        <i class="heart__like fas fa-heart"></i>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-div">
+                <h1 class="footer-div-titre">
+                    Ohmyfood
+                </h1>
+                <ul class="footer-div-list">
+                    <li class="footer-div-list-li">
+                        <span class="footer-div-list-li-utensils">
                                 <i class="fas fa-utensils"></i>
-                            </span>
-                            Proposer un restaurant
-                        </li>
-                        <li class="footer-div-list-li">
-                            <span class="footer-div-list-li-main">
+                            </span> Proposer un restaurant
+                    </li>
+                    <li class="footer-div-list-li">
+                        <span class="footer-div-list-li-main">
                                 <i class="fas fa-hands-helping"></i>
-                            </span>
-                            Devenir partenaire
-                        </li>
-                        <li class="footer-div-list-li">
-                            Mentions légales
-                        </li>
-                        <li class="footer-div-list-li">
-                            <a href="mailto:contact@ohmyfood.com">
+                            </span> Devenir partenaire
+                    </li>
+                    <li class="footer-div-list-li">
+                        Mentions légales
+                    </li>
+                    <li class="footer-div-list-li">
+                        <a href="mailto:contact@ohmyfood.com">
                                 Contact
                             </a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-    </body>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
