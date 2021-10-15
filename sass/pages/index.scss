@@ -1,14 +1,16 @@
 body {
     text-align: center;
 }
+
 .container-body {
     position: relative;
     &-page {
         position: absolute;
         width: 100%;
-       animation: container-body 0s $container-body-delay both;
+        animation: container-body 0s $container-body-delay both;
     }
 }
+
 .spinner {
     display: flex;
     flex-direction: column;
@@ -18,18 +20,19 @@ body {
     top: 150px;
     animation: spinner-load $spinner-load-dur $spinner-load-delay ease-out both;
 }
+
 .reserve-menu {
     display: flex;
     flex-direction: column;
     padding-top: 34px;
     padding-bottom: 44px;
     background: $color-grey-light;
-    &  h1 {
-    font-size: 1.2rem;
-    @include mobile {
-        font-size: 1.1rem;
-    }
-    margin: 2% 12% 1% 12%;
+    & h1 {
+        font-size: 1.2rem;
+        @include mobile {
+            font-size: 1.1rem;
+        }
+        margin: 2% 12% 1% 12%;
     }
     & p {
         margin: 0% 3% 8% 3%;
@@ -39,6 +42,7 @@ body {
         }
     }
 }
+
 .criteres {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +59,7 @@ body {
         width: 100%;
     }
 }
+
 .criteres-btn {
     margin-top: 20px;
     position: relative;
@@ -89,12 +94,14 @@ body {
         background: $color-primary;
     }
 }
+
 .criteres-btn:hover {
     background-color: lighten($color: $color-primary, $amount: 35);
     & i {
         color: darken($color: $color-primary, $amount: 5);
     }
 }
+
 .criteres-btn-description {
     display: flex;
     &-mobile {
@@ -119,7 +126,10 @@ body {
         font-family: 'Roboto-Bold';
     }
 }
-    /*Section*/
+
+
+/*Section*/
+
 .section-index {
     display: flex;
     flex-direction: column;
@@ -133,6 +143,7 @@ body {
         margin-right: 5%;
     }
 }
+
 .container-vignettes {
     display: flex;
     flex-wrap: wrap;
@@ -149,14 +160,16 @@ body {
         border: 0px solid $color-white;
         border-radius: 15px;
         @include decoration-none;
-        width: 43%;
+        width: 44%;
         @include mobile {
             width: 100%;
+            margin-bottom: 18px;
         }
-        margin-bottom: 18px;
+        margin-bottom: 70px;
         @include box-shadow
     }
 }
+
 .vignettes-img {
     width: 100%;
     height: 160px;
@@ -179,10 +192,12 @@ body {
         font-family: "Roboto-light";
     }
 }
+
 .vignettes-container {
     display: flex;
     justify-content: space-between;
 }
+
 .vignettes-container-description {
     text-align: left;
     margin-left: 10px;
@@ -200,20 +215,23 @@ body {
         margin-bottom: 0px;
     }
 }
+
 .vignettes-container-icone {
-    margin-top: 5%;
-    margin-right: 8%;
+    margin-top: auto;
+    margin-right: 14px;
+    margin-bottom: 14px;
     font-size: 1.4rem;
 }
+
 .like__btn {
     height: 2rem;
     width: 2rem;
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     position: relative;
     background-color: black;
@@ -229,10 +247,10 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
-        background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
     }
 }
-    
+
 .heart__like {
     transition-duration: 0.25s;
     background-color: $color-white;
@@ -241,9 +259,9 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     mix-blend-mode: lighten;
     font-weight: normal;
     &:hover {
